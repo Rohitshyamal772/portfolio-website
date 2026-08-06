@@ -1,0 +1,120 @@
+.contact-section {
+  width: 100%;
+  padding-bottom: 100px;
+  margin-top: 100px;
+  background-color: var(--backgroundColor);
+  position: relative;
+  z-index: 12;
+}
+.contact-container {
+  width: var(--cWidth);
+  max-width: var(--cMaxWidth);
+  margin: 0 auto;
+}
+.contact-section h3 {
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 90px;
+}
+.contact-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-flex h4 {
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.6;
+}
+.contact-box {
+  display: flex;
+  flex-direction: column;
+}
+.contact-details {
+  margin-left: 90px;
+}
+.contact-flex p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+a.contact-social {
+  font-size: 25px;
+  border-bottom: 1px solid #ccc;
+  transition: color 0.3s ease, border-color 0.3s ease, padding-left 0.3s ease;
+  position: relative;
+}
+a.contact-social:hover {
+  color: var(--accentColor);
+  border-bottom-color: var(--accentColor);
+  padding-left: 8px;
+}
+a.contact-social svg {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+a.contact-social:hover svg {
+  transform: translate(4px, -4px);
+}
+.contact-box h2 {
+  font-weight: 400;
+  font-size: 23px;
+  margin: 0;
+}
+.contact-box h2 > span {
+  color: var(--accentColor);
+}
+.contact-box h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  gap: 10px;
+  opacity: 0.5;
+}
+@media only screen and (max-width: 1600px) {
+  .contact-section h3 {
+    font-size: 50px;
+  }
+  .contact-box h2 {
+    font-size: 20px;
+  }
+  a.contact-social {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .contact-section h3 {
+    font-size: 40px;
+  }
+  .contact-box h2 {
+    font-size: 18px;
+  }
+  a.contact-social {
+    font-size: 20px;
+  }
+  .contact-flex p {
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contact-flex {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .contact-flex p {
+    margin-bottom: 0px;
+  }
+  .contact-flex h4 {
+    margin-top: 20px;
+  }
+  .contact-details {
+    margin-left: 0;
+  }
+  .contact-section h3 {
+    padding-left: 0;
+  }
+  .contact-section {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+}
